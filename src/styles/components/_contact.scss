@@ -1,0 +1,51 @@
+#contact {
+  background-color: $dark-gray;
+  color: $white;
+}
+
+.contacts__title {
+  margin-left: $l-size;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+
+.contact__link {
+  width: 50px;
+  height: 50px;
+}
+
+.mask {
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: $light-purple;
+  &:hover {
+    background-color: darken($light-purple, 15%);
+  }
+}
+
+.maskEmail {
+  -webkit-mask-image: url(https://i.postimg.cc/m2kCdtFm/62519-icons-youtube-envelope-computer-mail-email.png);
+  mask-image: url(https://i.postimg.cc/m2kCdtFm/62519-icons-youtube-envelope-computer-mail-email.png);
+}
+
+.maskLinkedIn {
+  -webkit-mask-image: url(https://i.postimg.cc/nzVCCP43/80805-linkedin-logo-white-png.png);
+  mask-image: url(https://i.postimg.cc/nzVCCP43/80805-linkedin-logo-white-png.png);
+}
+
+.maskGitHub {
+  -webkit-mask-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+  mask-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+}
+
+@media screen and (min-width: 500px) {
+  .contact__links {
+    margin: auto;
+  }
+}

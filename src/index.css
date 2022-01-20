@@ -1,13 +1,276 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#menu-bar {
+  background-color: rgb(63, 62, 62);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 8vh;
+}
+
+#logo-menu {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#banner {
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(255, 255, 255, 0)
+    ),
+    url("http://getwallpapers.com/wallpaper/full/c/4/7/489350.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  height: 35px;
+  width: 35px;
+  padding-left: 15px;
+}
+
+#close {
+  height: 20px;
+  width: 20px;
+  padding-right: 15px;
+}
+
+#hamburger-menu {
+  width: 25px;
+  padding-right: 15px;
+}
+
+#menu-box {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: #ffffff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 2px 10px black;
+  padding-top: 12px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+ul:nth-child(1) li:before {
+  content: "\2713\0020";
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  width: 40vw;
+  padding: 10px 0px;
+  font-size: 1rem;
+}
+
+#menu-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu-link {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 3;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(63 62 62);
+  height: 100px;
+  align-items: center;
+}
+
+#about-pic {
+  width: 350px;
+  height: 550px;
+  align-self: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.322),
+      rgba(255, 255, 255, 0.322)
+    ),
+    url(https://i.postimg.cc/s2ZrGP8c/bwpic.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#icon {
+  height: 40px;
+  width: 40px;
+}
+
+#resume-link {
+  align-self: center;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  width: 300px;
+  background-color: #9d8fde;
+  border: none;
+  margin-top: 50px;
+}
+
+#resume-link:hover {
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin: 80px 20px 20px 30px;
+}
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgb(77, 76, 76);
+  line-height: 1.5;
+  margin: 80px 20px 20px 30px;
+}
+
+#pill-pal {
+  align-self: center;
+  width: 350px;
+  height: 250px;
+  display: inline-block;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.767),
+      rgba(0, 0, 0, 0.767)
+    ),
+    url("https://i.postimg.cc/pXXgg7hC/Pill-pall-pic.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-list-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#skill-card {
+  color: black;
+  text-align: center;
+  width: 100px;
+  margin: 8px;
+  height: 22px;
+  background-color: #99d2e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#project-card-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#project-link-button {
+  width: 55px;
+  margin: 5px 15px;
+  background-color: #9d8fde;
+  border: none;
+}
+.maskCall {
+  -webkit-mask-image: url(https://i.postimg.cc/PqZhMz41/istockphoto-501865663-170667a.png);
+  mask-image: url(https://i.postimg.cc/PqZhMz41/istockphoto-501865663-170667a.png);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: #9d8fde;
+}
+
+.maskEmail {
+  -webkit-mask-image: url(https://i.postimg.cc/m2kCdtFm/62519-icons-youtube-envelope-computer-mail-email.png);
+  mask-image: url(https://i.postimg.cc/m2kCdtFm/62519-icons-youtube-envelope-computer-mail-email.png);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: #9d8fde;
+}
+
+.maskLinkedIn {
+  -webkit-mask-image: url(https://i.postimg.cc/nzVCCP43/80805-linkedin-logo-white-png.png);
+  mask-image: url(https://i.postimg.cc/nzVCCP43/80805-linkedin-logo-white-png.png);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: #9d8fde;
+}
+
+.maskGitHub {
+  -webkit-mask-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+  mask-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: #9d8fde;
 }

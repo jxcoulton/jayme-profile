@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+  background-color: $white;
+}
+
+h1 {
+  font-size: $xl-size;
+  font-weight: 500;
+  letter-spacing: $xs-size;
+}
+
+h4 {
+  font-size: $l-size;
+  font-weight: 400;
+  letter-spacing: $xs-size;
+  margin-top: 0;
+}
+
+h5 {
+  font-size: $l-size;
+  font-weight: 400;
+  margin-top: $l-size;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: $xs-size;
+  line-height: $l-size;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul:nth-child(2) li:before {
+  font-size: $l-size;
+  content: "\2713\0020";
+}
+
+.logo {
+  width: 40px;
+  padding: 15px;
+}
+
+.transition-line {
+  background-color: $light-teal;
+  height: 2px;
+  width: 40%;
+  // margin: 0 0 $l-size 5%;
+}
+
+.triangle-white {
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-bottom: 20px solid transparent;
+  border-top: 30px solid $white;
+  display: inline-block;
+}
+
+.triangle-dark-gray {
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-bottom: 20px solid transparent;
+  border-top: 30px solid $dark-gray;
+  display: inline-block;
+}
+
+.triangle-invert {
+  border-left: 50vw solid $white;
+  border-right: 50vw solid $white;
+  border-bottom: 20px solid $white;
+  border-top: 30px solid transparent;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $dark-gray;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $light-teal;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+@media screen and (min-width: 500px) {
+  .hover-underline-animation {
+    color: $white;
+  }
+}

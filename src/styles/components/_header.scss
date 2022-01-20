@@ -1,0 +1,70 @@
+.header-bar__background {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(255, 255, 255, 0)
+    ),
+    url("http://getwallpapers.com/wallpaper/full/c/4/7/489350.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-end;
+}
+
+.header-bar__menu-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $gray;
+  position: fixed;
+  width: 100%;
+}
+
+.header-bar__content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .transition-line {
+    width: 40%;
+    margin: 1.25rem 0;
+  }
+}
+
+.header__large-screen-links {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+@media screen and (max-width: 500px) {
+  .header__large-screen-links {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header-bar__background{
+    height: 105vh
+  }
+  .header-bar__content {
+    h1 {
+      font-size: 4vw;
+    }
+    h4 {
+      font-size: 2vw;
+    }
+    .transition-line {
+      width: 20%;
+    }
+  }
+}

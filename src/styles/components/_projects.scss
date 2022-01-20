@@ -1,0 +1,96 @@
+#projects {
+  padding-bottom: 20%;
+}
+
+.projects__title {
+  margin-left: $l-size;
+}
+
+.projects__cards {
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects__card {
+  color: $white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  height: 50vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.829),
+      rgba(0, 0, 0, 0.829)
+    ),
+    url("https://i.postimg.cc/26SKSq4c/pill-pall-pic3.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.projects__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  h2 {
+    background-color: $dark-gray;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: $xs-size;
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+.projects__content-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  p {
+    font-size: $m-size;
+    letter-spacing: $xs-size;
+    padding: 0 0 0 30%;
+    margin: 8px;
+  }
+}
+
+.projects__card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    margin: 2%;
+    padding: 0 2%;
+    color: #383838;
+    align-self: center;
+    background-color: #bfafe9;
+    border: none;
+    border-bottom: 2px solid #9f87de;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      background-color: darken($light-purple, 20%);
+      border-bottom: 2px solid darken($light-purple, 30%);
+    }
+    img {
+      width: 20px;
+      padding-right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .projects__card {
+    max-width: 450px;
+  }
+}
