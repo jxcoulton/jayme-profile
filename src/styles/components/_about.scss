@@ -1,7 +1,9 @@
 #about {
   display: flex;
-
   flex-direction: column;
+  .transition-line {
+    margin-bottom: 45px;
+  }
 }
 
 .about__title {
@@ -31,6 +33,18 @@
   justify-content: space-around;
 }
 
+.about-contact-links {
+  a {
+    margin: 0 3vw;
+    .mask {
+      background-color: $gray;
+      &:hover {
+        background-color: darken($gray, 10%);
+      }
+    }
+  }
+}
+
 .about__button {
   color: $dark-gray;
   align-self: center;
@@ -51,9 +65,13 @@
 @media screen and (min-width: 500px) {
   #about {
     height: 100vh;
+    .transition-line {
+      margin-bottom: 0;
+    }
   }
   .about__pic {
     width: 30%;
+    min-width: 250px;
   }
   .about__content {
     display: flex;

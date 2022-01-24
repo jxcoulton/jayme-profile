@@ -9,13 +9,18 @@ function Projects() {
           <div className="projects__card-content">
             <h2>Pill Pal</h2>
 
+            <p className="project-description">
+              Pill Pal is a medication management application. Features include:
+              identifying medications, tracking medications, and comparing the
+              interactivity of medications
+            </p>
             <div className="projects__content-skill">
-              <p>- JavaScript</p>
-              <p>- React</p>
-              <p>- HTML</p>
-              <p>- CSS</p>
-              <p>- Supabase</p>
-              <p>- Axios</p>
+              <p>JavaScript</p>
+              <p>React</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Supabase</p>
+              <p>Axios</p>
             </div>
             <div className="projects__card-buttons">
               <a

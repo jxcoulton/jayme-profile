@@ -15,9 +15,9 @@ function Header() {
           <a className="hover-underline-animation" href="#projects">
             Projects
           </a>
-          <a className="hover-underline-animation" href="#contact">
+          {/* <a className="hover-underline-animation" href="#contact">
             Contact
-          </a>
+          </a> */}
         </div>
         <Menu />
       </div>

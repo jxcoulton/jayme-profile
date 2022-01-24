@@ -25,6 +25,7 @@
   background-color: $gray;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .header-bar__content {
@@ -53,8 +54,8 @@
 }
 
 @media screen and (min-width: 500px) {
-  .header-bar__background{
-    height: 105vh
+  .header-bar__background {
+    height: 105vh;
   }
   .header-bar__content {
     h1 {
