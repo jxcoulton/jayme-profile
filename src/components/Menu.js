@@ -37,7 +37,7 @@ function Menu() {
           />
         </div>
         <div className="menu__dropdown-links">
-          <a className="hover-underline-animation" href="#scroll-point-about">
+          <a className="hover-underline-animation" href="#about-me">
             About Me
           </a>
           <a className="hover-underline-animation" href="#skills">

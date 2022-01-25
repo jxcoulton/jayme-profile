@@ -6,7 +6,7 @@ function Header() {
       <div className="header-bar__menu-box">
         <img className="logo" src="/JC.png" alt="logo" />
         <div className="header__large-screen-links">
-          <a className="hover-underline-animation" href="#scroll-point-about">
+          <a className="hover-underline-animation" href="#about-me">
             About Me
           </a>
           <a className="hover-underline-animation" href="#skills">
@@ -28,7 +28,7 @@ function Header() {
           <h4>UI Developer</h4>
           <div className="transition-line"></div>
         </div>
-        <div className="triangle-invert" id="scroll-point-about"></div>
+        <div className="triangle-invert" id="about-me"></div>
       </div>
     </div>
   );
