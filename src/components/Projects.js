@@ -29,6 +29,7 @@ function Projects() {
                 rel="noreferrer"
               >
                 <img
+                  alt="pill-pal-bg"
                   className="maskSite"
                   src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png"
                 />
@@ -39,7 +40,7 @@ function Projects() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
+                <img alt="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
                 github
               </a>
             </div>

@@ -13,14 +13,14 @@ function Contact() {
           ></div>
         </a>
 
-        <a href="https://www.linkedin.com/in/jayme-coulton/" target="_blank">
+        <a rel="noreferrer"  href="https://www.linkedin.com/in/jayme-coulton/" target="_blank">
           <div
             className="mask maskLinkedIn contact__link"
             src="https://i.postimg.cc/nzVCCP43/80805-linkedin-logo-white-png.png"
             alt="linked in"
           ></div>
         </a>
-        <a href="https://github.com/jxcoulton" target="_blank">
+        <a rel="noreferrer"  href="https://github.com/jxcoulton" target="_blank">
           <div
             className="mask maskGitHub contact__link"
             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"

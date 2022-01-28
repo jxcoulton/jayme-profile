@@ -1,20 +1,24 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 function Menu() {
   const [showMenu, setShowMenu] = useState(false);
 
+  const handleCloseMenu = useCallback(() => {
+    if (showMenu) {
+      setShowMenu(false);
+    }
+  }, [showMenu]);
+
   useEffect(() => {
-    showMenu && document.addEventListener("scroll", handleCloseMenu);
-  });
+    document.addEventListener("scroll", handleCloseMenu);
+    return () => {
+      document.removeEventListener("scroll", handleCloseMenu);
+    };
+  }, [handleCloseMenu]);
 
   const handleMenu = (e) => {
     e.preventDefault();
     setShowMenu(true);
-  };
-
-  const handleCloseMenu = () => {
-    setShowMenu(false);
-    document.removeEventListener("scroll", handleCloseMenu);
   };
 
   return (
