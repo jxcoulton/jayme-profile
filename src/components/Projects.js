@@ -18,13 +18,13 @@ function Projects() {
               <p>JavaScript</p>
               <p>React</p>
               <p>HTML</p>
-              <p>CSS</p>
+              <p>Material UI</p>
               <p>Supabase</p>
               <p>Axios</p>
             </div>
             <div className="projects__card-buttons">
               <a
-                href="https://pill-pal-rx.herokuapp.com/login"
+                href="https://pill-pouch-kzynef722-jxcoulton.vercel.app/login"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -40,7 +40,10 @@ function Projects() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img alt="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
+                <img
+                  alt="github-logo"
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                />
                 github
               </a>
             </div>
