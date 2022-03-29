@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   #about {
     height: 100vh;
     .transition-line {
@@ -71,6 +71,7 @@
   }
   .about__pic {
     min-width: 250px;
+    padding-left: 20px;
   }
   .about__content {
     display: flex;

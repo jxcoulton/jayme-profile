@@ -21,6 +21,7 @@ function Skills() {
             <li>Axios</li>
             <li>Express</li>
             <li>Node.js</li>
+            <li>Material UI</li>
           </ul>
         </div>
         <div className="skills__skill-card">
