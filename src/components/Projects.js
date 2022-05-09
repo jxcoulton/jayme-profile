@@ -50,6 +50,54 @@ function Projects() {
           </div>
         </div>
       </div>
+      <div className="projects__cards">
+        <div className="projects__card-dinner">
+          <div className="projects__card-content">
+            <h2>DinnerDraft</h2>
+
+            <p className="project-description">
+              <strong>- IN PROGRESS -</strong>
+              <br />
+              DinnerDraft is a application for users to organize their meal
+              plans for the week. Features will include: planning meals,
+              creating grocery lists, and saving recipes.
+            </p>
+            <div className="projects__content-skill">
+              <p>TypeScript</p>
+              <p>React</p>
+              <p>HTML</p>
+              <p>Material UI</p>
+              <p>Firebase</p>
+              <p>Axios</p>
+            </div>
+            <div className="projects__card-buttons">
+              <a
+                href="https://pill-pouch.vercel.app/login"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  alt="pill-pal-bg"
+                  className="maskSite"
+                  src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png"
+                />
+                website
+              </a>
+              <a
+                href="https://github.com/jxcoulton/Pill-Pouch"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  alt="github-logo"
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                />
+                github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
