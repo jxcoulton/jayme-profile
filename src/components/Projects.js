@@ -24,7 +24,7 @@ function Projects() {
             </div>
             <div className="projects__card-buttons">
               <a
-                href="https://pill-pouch.vercel.app"
+                href="https://pill-pouch.vercel.app/login"
                 target="_blank"
                 rel="noreferrer"
               >
