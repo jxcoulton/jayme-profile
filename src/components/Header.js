@@ -25,7 +25,7 @@ function Header() {
         <div className="header-bar__content">
           <div className="transition-line"></div>
           <h1>Jayme Coulton</h1>
-          <h4>UI Developer</h4>
+          <h4>Web Developer</h4>
           <div className="transition-line"></div>
         </div>
         <div className="triangle-invert" id="about-me"></div>
