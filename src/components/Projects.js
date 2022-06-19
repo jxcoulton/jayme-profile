@@ -72,19 +72,19 @@ function Projects() {
             </div>
             <div className="projects__card-buttons">
               <a
-                href="https://pill-pouch.vercel.app/login"
+                href="https://dinner-draft.vercel.app/login"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  alt="pill-pal-bg"
+                  alt="dinner-draft-bg"
                   className="maskSite"
                   src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png"
                 />
                 website
               </a>
               <a
-                href="https://github.com/jxcoulton/Pill-Pouch"
+                href="https://github.com/jxcoulton/DinnerDraft"
                 target="_blank"
                 rel="noreferrer"
               >
