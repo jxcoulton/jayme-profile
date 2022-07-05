@@ -59,7 +59,7 @@ function Projects() {
               <strong>- IN PROGRESS -</strong>
               <br />
               DinnerDraft is a application for users to organize their meal
-              plans for the week. Features will include: planning meals,
+              plans for the week. Features will include: web scraping recipes from URLs, planning meals,
               creating grocery lists, and saving recipes.
             </p>
             <div className="projects__content-skill">
