@@ -56,11 +56,9 @@ function Projects() {
             <h2>DinnerDraft</h2>
 
             <p className="project-description">
-              <strong>- IN PROGRESS -</strong>
-              <br />
               DinnerDraft is a application for users to organize their meal
-              plans for the week. Features will include: web scraping recipes from URLs, planning meals,
-              creating grocery lists, and saving recipes.
+              plans. Features include: web scraping recipes from URLs, planning
+              meals, and saving recipes.
             </p>
             <div className="projects__content-skill">
               <p>TypeScript</p>
@@ -68,7 +66,7 @@ function Projects() {
               <p>HTML</p>
               <p>Material UI</p>
               <p>Firebase</p>
-              <p>Axios</p>
+              <p>Node.Js</p>
             </div>
             <div className="projects__card-buttons">
               <a
